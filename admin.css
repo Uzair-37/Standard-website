@@ -1,0 +1,72 @@
+/* Admin Dashboard Styles */
+
+.chart-container {
+    height: 250px;
+    position: relative;
+}
+
+#top-products .product-item, #ai-insights .insight-item {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+}
+
+#top-products .product-item:last-child, #ai-insights .insight-item:last-child {
+    border-bottom: none;
+}
+
+.product-item .product-name {
+    font-weight: 500;
+}
+
+.product-item .product-stats {
+    color: #6c757d;
+    font-size: 0.9rem;
+}
+
+.insight-item {
+    display: flex;
+    align-items: flex-start;
+}
+
+.insight-item .insight-priority {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-top: 4px;
+    margin-right: 8px;
+}
+
+.insight-priority.high {
+    background-color: #dc3545;
+}
+
+.insight-priority.medium {
+    background-color: #ffc107;
+}
+
+.insight-priority.low {
+    background-color: #0d6efd;
+}
+
+.insight-item .insight-content {
+    flex: 1;
+}
+
+.insight-item .insight-type {
+    color: #6c757d;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+.status-indicator {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #ccc;
+}
+
+.status-indicator.active {
+    background-color: #28a745;
+    box-shadow: 0 0 0 3px rgba(40, 167, 69, 0.2);
+}
